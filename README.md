@@ -19,3 +19,11 @@ In addition to easy VCS use, Intellij has Maven integration, allowing dependenci
 If you guys want to add a dependency, just go to File >> Project Structure >> Modules >> Dependencies >> Green plus button >> Libary >> Maven and search for whatever you want.
 
 Like Netbeans, you can run your program on a local environment. Make sure to build before running if adding additional dependencies.
+
+# The setup
+
+You'll need Intellij and gitbash installed to work on this project.
+For Intellij, make sure you've signed up for the student dev pack and have a registered and activated account.
+Install gitbash https://git-scm.com/downloads here.
+After installing Gitbash, download the Intellij Ultimate Edition from their website and log in with your account. At the main screan, click import from VCS and type in your information and select the LocationBuddy repo.
+One that has been imported you're all ready to work on the project. Try to get used to how Intellij works, and I recommend you go into File>>Settings>> Apperance>>Themes and change it to Darcula. Huge improvement. 
