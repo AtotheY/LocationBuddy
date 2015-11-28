@@ -34,8 +34,9 @@ For this file, please read the JAVADOC generated to get a clear understanding of
 To read the javadoc: Download DataPull.html >> Right click >> Open with >> Google Chrome (or any web browser)
 
 Here is a code snippet featuring how to make an object from the api, and how to use it  
- ```DataPull test = new DataPull("toronto");
- System.out.println (test.getCloudyPercent() + " " + test.getHumidity()+ " " + test.getMaxTemp()+ " " + test.getMinTemp()+ " " +   test.getPressure()+ " " + test.getSeaLevel()
-+ " " + test.getTemp()+ " " + test.getWindDegree()+ " " + test.getWindSpeed()+ " " + test.getDesc()+ " " + test.getSunriseDate()+ " " + test.getSunsetDate());```
+```
+DataPull test = new DataPull("toronto");
+System.out.println (test.getCloudyPercent() + " " + test.getHumidity()+ " " + test.getMaxTemp()+ " " + test.getMinTemp()+ " " +   test.getPressure()+ " " + test.getSeaLevel() + " " + test.getTemp()+ " " + test.getWindDegree()+ " " + test.getWindSpeed()+ " " + test.getDesc()+ " " + test.getSunriseDate()+ " " + test.getSunsetDate());
+```
 
  This is basically a fully functional local java api I made for ease of access. Please make good use of it! Think of cool and interesting ways to use the data provided :).
