@@ -33,9 +33,14 @@ One that has been imported you're all ready to work on the project. Try to get u
 For this file, please read the JAVADOC generated to get a clear understanding of what the api has to offer, and what information types are returned.
 To read the javadoc: Download DataPull.html >> Right click >> Open with >> Google Chrome (or any web browser)
 
-Here is a code snippet featuring how to make an object from the api, and how to use it  
+Here is a code snippet featuring how to make an object from the api, and how to use it.  
+
+Setting up the object 
 ```
 DataPull test = new DataPull("toronto");
+```
+List of opperations you can do with your weather object  
+```
 System.out.println (test.getCloudyPercent() + " " + test.getHumidity()+ " " + 
 test.getMaxTemp()+ " " + test.getMinTemp()+ " " +   test.getPressure()+ " " + 
 test.getSeaLevel() + " " + test.getTemp()+ " " + test.getWindDegree()+ " " + 
