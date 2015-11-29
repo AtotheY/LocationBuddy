@@ -39,7 +39,7 @@ public class DataPull {
         }
         in.close();
 
-        //print result
+        System.out.print(response.toString());
 
 
     }
