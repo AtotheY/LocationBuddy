@@ -50,7 +50,7 @@ test.getSunsetDate());
 
 Example getting the temperature of two places and comparing it
 ```
-DataPull tor = new DataPull("Toronto");
+        DataPull tor = new DataPull("Toronto");
         DataPull ny = new DataPull("NewYork");
 
         double torTemp = tor.getTemp();
