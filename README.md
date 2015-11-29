@@ -27,3 +27,25 @@ For Intellij, make sure you've signed up for the student dev pack and have a reg
 Install gitbash https://git-scm.com/downloads here.
 After installing Gitbash, download the Intellij Ultimate Edition from their website and log in with your account. At the main screan, click import from VCS and type in your information and select the LocationBuddy repo.
 One that has been imported you're all ready to work on the project. Try to get used to how Intellij works, and I recommend you go into File>>Settings>> Apperance>>Themes and change it to Darcula. Huge improvement. 
+
+# Using DataPull.java to get your information
+
+For this file, please read the JAVADOC generated to get a clear understanding of what the api has to offer, and what information types are returned.
+To read the javadoc: Download DataPull.html >> Right click >> Open with >> Google Chrome (or any web browser)
+
+Here is a code snippet featuring how to make an object from the api, and how to use it.  
+
+Setting up the object 
+```
+DataPull test = new DataPull("toronto");
+```
+List of opperations you can do with your weather object  
+```
+System.out.println (test.getCloudyPercent() + " " + test.getHumidity()+ " " + 
+test.getMaxTemp()+ " " + test.getMinTemp()+ " " +   test.getPressure()+ " " + 
+test.getSeaLevel() + " " + test.getTemp()+ " " + test.getWindDegree()+ " " + 
+test.getWindSpeed()+ " " + test.getDesc()+ " " + test.getSunriseDate()+ " " + 
+test.getSunsetDate());
+```
+
+ This is basically a fully functional local java api I made for ease of access. Please make good use of it! Think of cool and interesting ways to use the data provided :).
