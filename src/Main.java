@@ -5,9 +5,21 @@ public class Main {
 
     public static void main (String args[]) throws Exception
     {
-        DataPull test = new DataPull("toronto");
-        System.out.println (test.getCloudyPercent() + " " + test.getHumidity()+ " " + test.getMaxTemp()+ " " + test.getMinTemp()+ " " + test.getPressure()+ " " + test.getSeaLevel()
-                + " " + test.getTemp()+ " " + test.getWindDegree()+ " " + test.getWindSpeed()+ " " + test.getDesc()+ " " + test.getSunriseDate()+ " " + test.getSunsetDate());
-    }
+        DataPull tor = new DataPull("Toronto");
+        DataPull ny = new DataPull("NewYork");
 
+        double torTemp = tor.getTemp();
+        double nyTemp = ny.getTemp();
+        String torDesc = tor.getDesc();
+        String nyDesc = ny.getDesc();
+        System.out.println ("Toronto temp is: "+ torTemp + "degrees celsius  " + torDesc);
+        System.out.println ("New York temp is: "+ nyTemp + "degrees celsius  " + nyDesc);
+
+        if (torTemp > nyTemp)
+        {
+            System.out.println ("Toronto is hotter today!");
+        }
+        else
+            System.out.println ("New York  is hotter today!");
+    }
 }
