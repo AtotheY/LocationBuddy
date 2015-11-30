@@ -22,5 +22,4 @@ public class Main {
         else
             System.out.println ("New York  is hotter today!");
     }
-
 }

@@ -48,4 +48,30 @@ test.getWindSpeed()+ " " + test.getDesc()+ " " + test.getSunriseDate()+ " " +
 test.getSunsetDate());
 ```
 
+Example getting the temperature of two places and comparing it
+```
+        DataPull tor = new DataPull("Toronto");
+        DataPull ny = new DataPull("NewYork");
+
+        double torTemp = tor.getTemp();
+        double nyTemp = ny.getTemp();
+        String torDesc = tor.getDesc();
+        String nyDesc = ny.getDesc();
+        System.out.println ("Toronto temp is: "+ torTemp + "degrees celsius  " + torDesc);
+        System.out.println ("New York temp is: "+ nyTemp + "degrees celsius  " + nyDesc);
+
+        if (torTemp > nyTemp)
+        {
+            System.out.println ("Toronto is hotter today!");
+        }
+        else
+            System.out.println ("New York  is hotter today!");
+```
+
+Output
+```
+Toronto temp is: 2.708000000000027degrees celsius  broken clouds
+New York temp is: 7.682999999999993degrees celsius  Sky is Clear
+New York  is hotter today!
+````
  This is basically a fully functional local java api I made for ease of access. Please make good use of it! Think of cool and interesting ways to use the data provided :).
