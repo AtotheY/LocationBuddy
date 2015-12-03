@@ -1,8 +1,7 @@
 # LocationBuddy
 A small project worked on by a group of friends using Java and Intellij
 
-We are probably going to get a small amount of information via API (weather information for a city) then have functions for that information.
-This ensures we will have enough to implement different classes and interfaces.
+Using http://openweathermap.org/ 's API we are able to get real time temperature information about any city in the world. The DataPull class is the main file that does the API interaction. The program will have a main class for user interaction, and a variety of functionalities to choose from, each of which involving their own design pattern.
 
 
 # Intellij vs Netbeans rundown
@@ -74,4 +73,5 @@ Toronto temp is: 2.708000000000027degrees celsius  broken clouds
 New York temp is: 7.682999999999993degrees celsius  Sky is Clear
 New York  is hotter today!
 ````
+*Note you can probably cast the temp to int to truncate the value*
  This is basically a fully functional local java api I made for ease of access. Please make good use of it! Think of cool and interesting ways to use the data provided :).
