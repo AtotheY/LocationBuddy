@@ -38,10 +38,5 @@ public abstract class CityGenerator {
     }
 
     //will tell the user the corresponding outputs.
-    public void showMessageOne()
-    {
-        System.out.println("The weather is  "+ getWeather()+ " degrees celsius");
-        System.out.println("The windspeed is " + getWindSpeed()+" m/s");
-    }
 
 }

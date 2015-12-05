@@ -5,7 +5,8 @@ import org.json.simple.JSONObject;
  */
 
 //The main class which creates the city objects and will output to the user the city
-    //name, city's weather and windspeed.
+//name, city's weather and windspeed.
+
 public class MainRandomCompare {
     private CityGeneratorFactory factory = null;
     private CityGeneratorFactory factory2 = null;
@@ -18,8 +19,10 @@ public class MainRandomCompare {
 
     public void setup() throws Exception{
         //Generating cities
-        CityGenerator x = factory.generateCity();
-        CityGenerator y = factory2.generateCity();
+        factory = new CityGeneratorFactory();
+        factory2 = new CityGeneratorFactory();
+        x = factory.generateCity();
+        y = factory2.generateCity();
 
         //instance variables which are equal to their corresponding values.
         weather1 = x.getWeather();
@@ -27,6 +30,24 @@ public class MainRandomCompare {
         wind1 = x.getWindSpeed();
         wind2 = y.getWindSpeed();
     }
+
+    public String city1name () {
+       return("City: "+x.getName());}
+
+    public String city1temp () {
+        return("The weather is  "+ x.getWeather()+ " degrees celsius");}
+
+    public String city1wind () {
+        return ("The windspeed is " + x.getWindSpeed()+" m/s");}
+
+    public String city2name () {
+        return("City: "+y.getName());}
+
+    public String city2temp () {
+        return("The weather is  "+ y.getWeather()+ " degrees celsius");}
+
+    public String city2wind () {
+        return ("The windspeed is " + y.getWindSpeed()+" m/s");}
 
     public String randTempCompare()
     {

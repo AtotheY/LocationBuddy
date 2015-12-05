@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3578007-9193-463a-9b18-ea5393d1e3ba" name="Default" comment="Added example on how to use DataPull api as a library. This example gets the temperature of two cities, compares them, and outputs a description.">
+    <list default="true" id="f3578007-9193-463a-9b18-ea5393d1e3ba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CityGenerator.java" afterPath="$PROJECT_DIR$/src/CityGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainRandomCompare.java" afterPath="$PROJECT_DIR$/src/MainRandomCompare.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RandomWeatherComparer.java" afterPath="$PROJECT_DIR$/src/RandomWeatherComparer.java" />
     </list>
     <ignored path="LocationBuddy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,41 +32,17 @@
         <entry file="file://$PROJECT_DIR$/src/DataPull.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+              <caret line="93" column="50" selection-start-line="93" selection-start-column="50" selection-end-line="93" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <file leaf-file-name="CityGeneratorFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CityGeneratorFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RandomWeatherComparer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RandomWeatherComparer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainRandomCompare.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MainRandomCompare.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.025291828">
-              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,7 +52,41 @@
         <entry file="file://$PROJECT_DIR$/src/RandomCity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RandomWeatherComparer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/RandomWeatherComparer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.66342413">
+              <caret line="66" column="38" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainRandomCompare.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MainRandomCompare.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,13 +122,13 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/DataPull.java" />
         <option value="$PROJECT_DIR$/LocationBuddy.iml" />
-        <option value="$PROJECT_DIR$/src/CityGenerator.java" />
         <option value="$PROJECT_DIR$/src/CityGeneratorFactory.java" />
         <option value="$PROJECT_DIR$/src/RandomCity2.java" />
         <option value="$PROJECT_DIR$/src/RandomCity.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/RandomWeatherComparer.java" />
+        <option value="$PROJECT_DIR$/src/CityGenerator.java" />
         <option value="$PROJECT_DIR$/src/MainRandomCompare.java" />
+        <option value="$PROJECT_DIR$/src/RandomWeatherComparer.java" />
       </list>
     </option>
   </component>
@@ -741,7 +753,7 @@
       <workItem from="1449329566379" duration="131000" />
       <workItem from="1449335540863" duration="9226000" />
       <workItem from="1449345324860" duration="5718000" />
-      <workItem from="1449352733207" duration="1013000" />
+      <workItem from="1449352733207" duration="2778000" />
     </task>
     <task id="LOCAL-00001" summary="Added test classes for more clear idea of how hiarchy in Intellij works vs Netbeans for George+Neethan">
       <created>1448430874606</created>
@@ -773,11 +785,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449344267166</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Changed MainRandomCompare to a fully accessible call function instead of a main runable file.">
+      <created>1449353778246</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1449353778246</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29620000" />
+    <option name="totallyTimeSpent" value="31385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
@@ -825,7 +843,8 @@
     <MESSAGE value="Added test classes for more clear idea of how hiarchy in Intellij works vs Netbeans for George+Neethan" />
     <MESSAGE value="don't merge" />
     <MESSAGE value="Added example on how to use DataPull api as a library. This example gets the temperature of two cities, compares them, and outputs a description." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added example on how to use DataPull api as a library. This example gets the temperature of two cities, compares them, and outputs a description." />
+    <MESSAGE value="Changed MainRandomCompare to a fully accessible call function instead of a main runable file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed MainRandomCompare to a fully accessible call function instead of a main runable file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1022,10 +1041,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CityGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainRandomCompare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataPull.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <caret line="93" column="50" selection-start-line="93" selection-start-column="50" selection-end-line="93" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CityGeneratorFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandomCity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1033,36 +1084,20 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RandomCity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RandomWeatherComparer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.66342413">
+          <caret line="66" column="38" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainRandomCompare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.025291828">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
