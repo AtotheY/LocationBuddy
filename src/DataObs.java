@@ -18,6 +18,7 @@ public class DataObs implements Observers {
         datGrab.regObs(this);
     }
 
+    //Increments observer ID; Creates and initializes object of type Updates for the subject's interface.
     public void printDat(){
 
         System.out.println(obsId + "Winds\n" + press + "Pressure\n" + humid + "Humidity");

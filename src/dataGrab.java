@@ -31,8 +31,8 @@ public class dataGrab implements Updates {
     }
 
 
-    public void setWinds(double newWinds) {
-        this.winds = newWinds;
+    public void setWinds(double newWinds) { //Sets new values for wind, pressure, humidity; calls notification
+        this.winds = newWinds;              //to let the observers know
         notification();
     }
 
