@@ -12,7 +12,7 @@ public class RandomCity extends CityGenerator {
         Random random = new Random();
 
         //Creating the list of cities.
-        String[] cityList = new String[]{"Toronto", "NewYork", "London", "Paris", "Rome", "Vancouver", "Barcelona", "Madrid", "Dubai", "SinGapore"};
+        String[] cityList = new String[]{"Toronto", "NewYork", "London", "Paris", "Rome", "Vancouver", "Barcelona", "Madrid", "Dubai", "Singapore"};
               //if more cities need to be added: + "Amsterdam"+ "Athens"+"Brussels"+"Milan"+"Beijing"};
 
         //creating a random number count which goes from 0 to 14 which is the size of the array.

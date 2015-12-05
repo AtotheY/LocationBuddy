@@ -52,7 +52,7 @@ public class Main {
         if(wind1>wind2)
         {
             System.out.println(x.getName() + "'s windspeed is greater than " + y.getName()
-                    + "'s temperature");
+                    + "'s windspeed");
         }
         else if (wind2>wind1)
         {
