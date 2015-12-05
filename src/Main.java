@@ -11,6 +11,8 @@ public class Main {
         double nyTemp = ny.getTemp();
         String torDesc = tor.getDesc();
         String nyDesc = ny.getDesc();
+
+
         System.out.println ("Toronto temp is: "+ torTemp + "degrees celsius  " + torDesc);
         System.out.println ("New York temp is: "+ nyTemp + "degrees celsius  " + nyDesc);
 
