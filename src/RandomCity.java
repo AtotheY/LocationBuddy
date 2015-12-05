@@ -26,8 +26,5 @@ public class RandomCity extends CityGenerator {
         setWindSpeed(city1.getWindSpeed());
         setName(cityList[ranNum]);
 
-
-
-
     }
 }
