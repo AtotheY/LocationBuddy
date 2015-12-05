@@ -26,7 +26,23 @@ public class dataGrab implements Updates {
     @Override
     public void notification() {
 
-        for(Observers notify : obsList)
-            Observers.update(winds, humid, press)
+        for (Observers notify : obsList)
+            notify.update(winds, humid, press);
+    }
+
+
+    public void setWinds(double newWinds) {
+        this.winds = newWinds;
+        notification();
+    }
+
+    public void setHumid(long newHumid) {
+        this.humid = newHumid;
+        notification();
+    }
+
+    public void setPress(double newPress){
+        this.press = newPress;
+        notification();
     }
 }

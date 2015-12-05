@@ -7,7 +7,6 @@ public class Main {
     {
         DataPull tor = new DataPull("Toronto");
         DataPull ny = new DataPull("NewYork");
-
         double torTemp = tor.getTemp();
         double nyTemp = ny.getTemp();
         String torDesc = tor.getDesc();
