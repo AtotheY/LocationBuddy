@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f3578007-9193-463a-9b18-ea5393d1e3ba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CityGenerator.java" afterPath="$PROJECT_DIR$/src/CityGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainRandomCompare.java" afterPath="$PROJECT_DIR$/src/MainRandomCompare.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RandomWeatherComparer.java" afterPath="$PROJECT_DIR$/src/RandomWeatherComparer.java" />
     </list>
     <ignored path="LocationBuddy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,8 +70,8 @@
       <file leaf-file-name="RandomWeatherComparer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RandomWeatherComparer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66342413">
-              <caret line="66" column="38" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.82879376">
+              <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -753,7 +750,7 @@
       <workItem from="1449329566379" duration="131000" />
       <workItem from="1449335540863" duration="9226000" />
       <workItem from="1449345324860" duration="5718000" />
-      <workItem from="1449352733207" duration="2778000" />
+      <workItem from="1449352733207" duration="4319000" />
     </task>
     <task id="LOCAL-00001" summary="Added test classes for more clear idea of how hiarchy in Intellij works vs Netbeans for George+Neethan">
       <created>1448430874606</created>
@@ -791,11 +788,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449353778246</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Made major changes to MainRandomCompare, notably made getter methods for all information obtained for each city. &#10;&#10;Added basic skeleton, and a functional UI for the Random Compare module.">
+      <created>1449355585275</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1449355585275</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31385000" />
+    <option name="totallyTimeSpent" value="32926000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
@@ -844,7 +847,8 @@
     <MESSAGE value="don't merge" />
     <MESSAGE value="Added example on how to use DataPull api as a library. This example gets the temperature of two cities, compares them, and outputs a description." />
     <MESSAGE value="Changed MainRandomCompare to a fully accessible call function instead of a main runable file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed MainRandomCompare to a fully accessible call function instead of a main runable file." />
+    <MESSAGE value="Made major changes to MainRandomCompare, notably made getter methods for all information obtained for each city. &#10;&#10;Added basic skeleton, and a functional UI for the Random Compare module." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made major changes to MainRandomCompare, notably made getter methods for all information obtained for each city. &#10;&#10;Added basic skeleton, and a functional UI for the Random Compare module." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1093,8 +1097,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RandomWeatherComparer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66342413">
-          <caret line="66" column="38" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.82879376">
+          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
