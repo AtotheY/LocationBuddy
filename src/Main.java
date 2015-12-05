@@ -4,6 +4,8 @@ import org.json.simple.JSONObject;
  * Created by neethan on 2015-12-05.
  */
 
+//The main class which creates the city objects and will output to the user the city
+    //name and city's weather.
 public class Main {
 
     public static void main (String args[]) throws Exception {

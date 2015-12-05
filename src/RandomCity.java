@@ -3,6 +3,8 @@ import java.util.Random;
 /**
  * Created by neethan on 2015-12-02.
  */
+
+//This class creates the first randomly generated city and returns that cities weather.
 public class RandomCity extends CityGenerator {
     public RandomCity() throws Exception{
 

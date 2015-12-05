@@ -1,6 +1,8 @@
 /**
  * Created by neethan on 2015-12-02.
  */
+
+//This class generates the weather for the two cities generated.
 public abstract class CityGenerator {
 
     private double temp;
