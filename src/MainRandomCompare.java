@@ -6,7 +6,7 @@ import org.json.simple.JSONObject;
 
 //The main class which creates the city objects and will output to the user the city
     //name and city's weather.
-public class Main {
+public class MainRandomCompare {
 
     public static void main (String args[]) throws Exception {
 
