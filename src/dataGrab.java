@@ -10,6 +10,9 @@ public class dataGrab implements Updates {
     private double press;
     private long humid;
 
+    public dataGrab(){
+        obsList = new ArrayList<Observers>();
+    }
     @Override
     public void regObs(Observers newO) {
 
@@ -20,7 +23,7 @@ public class dataGrab implements Updates {
     public void deReg(Observers delO) {
 
         int index = obsList.indexOf(delO);
-        obsList.remove(delO);
+        obsList.remove(index);
     }
 
     @Override
@@ -30,6 +33,15 @@ public class dataGrab implements Updates {
             notify.update(winds, humid, press);
     }
 
+    public double getWinds(){
+        return winds;
+    }
+    public long getHumid(){
+        return humid;
+    }
+    public double getPress(){
+        return press;
+    }
 
     public void setWinds(double newWinds) { //Sets new values for wind, pressure, humidity; calls notification
         this.winds = newWinds;              //to let the observers know
