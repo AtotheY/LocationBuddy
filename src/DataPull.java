@@ -5,6 +5,7 @@ import org.json.simple.parser.JSONParser;
 import java.net.*;
 import java.io.*;
 import java.util.Date;
+import java.util.Objects;
 
 /**
  * Created by AnthonyS on 11/27/2015.
@@ -19,12 +20,30 @@ public class DataPull {
     //{"coord":{"lon":-0.13,"lat":51.51},"weather":[{"id":800,"main":"Clear","description":"Sky is Clear","icon":"01n"}],"base":"cmc stations","main":
     //{"temp":276.875,"pressure":1014.64,"humidity":91,"temp_min":276.875,"temp_max":276.875,"sea_level":1025.06,"grnd_level":1014.64},"wind":{"speed":5.96,"deg":281.008},"clouds":{
     //"all":0},"dt":1448681671,"sys":{"message":0.0122,"country":"GB","sunrise":1448696351,"sunset":1448726235},"id":2643743,"name":"London","cod":200}
+
+    // this method was added in due to the fact that for wind speed, wind degree, and all temp returns, the API would return a random combination of Longs+Doubles,
+    // longs if the value was whole, double if the value was decimal. This takes that value, checks if it's a long, and converts it to double by adding a decimal point.
+    // this actually saves a lot of time debugging a "class exception" error T_T....
+    private double toDouble(Object o)
+    {
+        String tempO = o.toString();
+        double temp;
+        if (tempO.contains(".")) {
+            temp = Double.parseDouble(tempO);
+            return (temp);
+        } else{
+            tempO = tempO + ".0";
+            temp = Double.parseDouble(tempO);
+            return temp;
+        }
+    }
     /**
      * Used to get the current temperature of city
      * @return      temperature of city in celsius
      */
     public double getTemp() {
-        double temp = (double)((JSONObject)json.get("main")).get("temp");
+        Object o = (((JSONObject) json.get("main")).get("temp"));
+        double temp = toDouble(o);
         return (temp-273.5); }
     /**
      * Used to get a simple description of the weather in the current area
@@ -52,14 +71,16 @@ public class DataPull {
      * @return      max temp in celsius
      */
     public double getMaxTemp() {
-        double temp = (double)((JSONObject)json.get("main")).get("temp_max");
+        Object o = ((JSONObject)json.get("main")).get("temp_max");
+        double temp = toDouble(o);
         return (temp-273.5); }
     /**
      * Used to get min current temperature of city
      * @return      min temp in celsius
      */
     public double getMinTemp() {
-        double temp = (double)((JSONObject)json.get("main")).get("temp_min");
+        Object o = ((JSONObject)json.get("main")).get("temp_min");
+        double temp = toDouble(o);
         return (temp-273.5); }
     /**
      * Used to get atmospheric pressure at sea level
@@ -72,17 +93,20 @@ public class DataPull {
      * Used to get current wind speed of city
      * @return      wind speed, meter/second
      */
-    public long getWindSpeed() {
-        long temp = (long)((JSONObject)json.get("wind")).get("speed");
-        return (temp); }
+    public double getWindSpeed() {
+        Object o = (((JSONObject) json.get("wind")).get("speed"));
+        double temp = toDouble(o);
+        return temp;
+    }
     /**
      * Used to get current wind direction
      * @return      wind direction, degrees
      */
     public double getWindDegree() {
-        long temp;
+        double temp;
         try {
-            temp = (long) ((JSONObject) json.get("wind")).get("deg");
+            Object o = ((JSONObject) json.get("wind")).get("deg");
+            temp = toDouble(o);
         }catch (NullPointerException e)
         {
             temp = 0;

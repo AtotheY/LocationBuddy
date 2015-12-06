@@ -16,9 +16,7 @@ import javafx.stage.Stage;
  */
 public class CityInfo  extends MainMenuDirect{
 
-    private String city = "";
     public void start (Stage primaryStage) throws Exception {
-
         Text scenetitle = new Text("City Info");
         scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         GridPane grid = new GridPane();
@@ -29,7 +27,6 @@ public class CityInfo  extends MainMenuDirect{
                 backToMain(primaryStage);
             }
         });
-
 
         // 12 items
         final ToggleGroup group = new ToggleGroup();
@@ -97,7 +94,11 @@ public class CityInfo  extends MainMenuDirect{
         grid.add(suns,1,13);
         grid.add(new Label(" "),1,14);
         grid.add(ret,1,15);
-        System.out.println (" asdf");
+        Main main2 = new Main();
+        String name2 = main2.getCity();
+        Label name1 = new Label(name2);
+        name1.setStyle("-fx-font: 22 arial; -fx-text-fill: #4c6b87;");
+        grid.add (name1,1,0);
         group.selectedToggleProperty().addListener(new ChangeListener<Toggle>(){
             public void changed(ObservableValue<? extends Toggle> ov,
                                 Toggle toggle, Toggle new_toggle) {

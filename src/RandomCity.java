@@ -10,7 +10,6 @@ public class RandomCity extends CityGenerator {
 
         //Creating a random object which will generate the random number.
         Random random = new Random();
-// ROME, LODNON, NEW YORK, BARC, toronTO, SING, paris, madrid, vancouver
         //Creating the list of cities.
         String[] cityList = new String[]{"Toronto", "NewYork", "London", "Paris", "Rome", "Vancouver", "Barcelona", "Madrid", "Vaughan", "Singapore"};
               //if more cities need to be added: + "Amsterdam"+ "Athens"+"Brussels"+"Milan"+"Beijing"};

@@ -7,7 +7,7 @@ public abstract class CityGenerator {
     //instance variables.
     private double temp;
     private String name;
-    private long windSpeed;
+    private double windSpeed;
 
     //getter and setter methods.
     public double getWeather()
@@ -24,7 +24,7 @@ public abstract class CityGenerator {
         return windSpeed;
     }
 
-    public void setWindSpeed(long speed)
+    public void setWindSpeed(double speed)
     {
         windSpeed = speed;
     }
