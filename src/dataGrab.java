@@ -12,13 +12,14 @@ public class dataGrab implements Updates {
 
     public dataGrab(){
         obsList = new ArrayList<Observers>();
-    }
+    } //Creates an ArrayList containing the Observers
+
+    //The following are necessary functions dealing with the Observer ArrayList
     @Override
     public void regObs(Observers newO) {
 
         obsList.add(newO);
     }
-
     @Override
     public void deReg(Observers delO) {
 
@@ -33,17 +34,8 @@ public class dataGrab implements Updates {
             notify.update(winds, humid, press);
     }
 
-    public double getWinds(){
-        return winds;
-    }
-    public long getHumid(){
-        return humid;
-    }
-    public double getPress(){
-        return press;
-    }
 
-    public void setWinds(double newWinds) { //Sets new values for wind, pressure, humidity; calls notification
+    public void setWinds(double newWinds) { //Sets new values per object for wind, pressure, humidity; calls notification
         this.winds = newWinds;              //to let the observers know
         notification();
     }

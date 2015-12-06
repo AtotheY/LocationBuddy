@@ -11,6 +11,8 @@ public class DataObs implements Observers {
     private int obsId;
     private Updates datGrab;
 
+
+    //Increments observer ID; Creates and initializes object of type Updates for the subject's interface.
     public DataObs(Updates datGrab){
         this.datGrab = datGrab;
         this.obsId = ++idTrack;
@@ -18,10 +20,10 @@ public class DataObs implements Observers {
         datGrab.regObs(this);
     }
 
-    //Increments observer ID; Creates and initializes object of type Updates for the subject's interface.
+
     public void printDat(){
 
-        System.out.println(obsId + "\n" + winds + "Winds\n" + press + "Pressure\n" + humid + "Humidity");
+        System.out.println(obsId + "\n" + "Wind Speed has been updated to: " +winds + "\nPressure has been updated to: " + press + "Humidity has been updated to: " + humid );
 
     }
     @Override
