@@ -1,26 +1,23 @@
+
 /**
- * Created by AnthonyS on 11/27/2015.
+ * Created by Serban Badea  on 12/5/2015.
  */
 public class Main {
 
-    public static void main (String args[]) throws Exception
-    {
-        DataPull tor = new DataPull("Toronto");
-        DataPull ny = new DataPull("NewYork");
-        double torTemp = tor.getTemp();
-        double nyTemp = ny.getTemp();
-        String torDesc = tor.getDesc();
-        String nyDesc = ny.getDesc();
+    public static void main (String args[]) throws Exception{
+        DataPull the6 = new DataPull("Toronto");
+        DataPull boston = new DataPull("Boston");
+        dataGrab grab1 = new dataGrab();
+        DataObs obs1 = new DataObs(grab1);
+        dataGrab grab2 = new dataGrab();
+        DataObs obs2 = new DataObs(grab2);
+
+        
+        grab1.setWinds(the6.getWindSpeed());
+        grab1.setHumid(the6.getHumidity());
 
 
-        System.out.println ("Toronto temp is: "+ torTemp + "degrees celsius  " + torDesc);
-        System.out.println ("New York temp is: "+ nyTemp + "degrees celsius  " + nyDesc);
-
-        if (torTemp > nyTemp)
-        {
-            System.out.println ("Toronto is hotter today!");
-        }
-        else
-            System.out.println ("New York  is hotter today!");
+        grab2.setWinds(boston.getWindSpeed());
+        grab2.setHumid(boston.getHumidity());
     }
 }

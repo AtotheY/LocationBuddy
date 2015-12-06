@@ -23,7 +23,7 @@ public class DataObs implements Observers {
 
     public void printDat(){
 
-        System.out.println(obsId + "\n" + "Wind Speed has been updated to: " +winds + "\nPressure has been updated to: " + press + "Humidity has been updated to: " + humid );
+        System.out.println(obsId + "\n" + "Wind Speed has been updated to: " +winds + "\nPressure has been updated to: " + press + "\nHumidity has been updated to: " + humid );
 
     }
     @Override
