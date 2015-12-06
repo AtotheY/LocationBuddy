@@ -9,7 +9,7 @@ import java.util.Date;
 /**
  * Created by AnthonyS on 11/27/2015.
  * @author Anthony Sistilli sistillianthony@gmail.com
- * @version 1.0
+ * @version 1.1
  * @since 2015-11-27
  */
 public class DataPull {
@@ -38,8 +38,8 @@ public class DataPull {
      * @return      temperature in hectopascals (hPa)
      */
     public double getPressure() {
-        double temp = (double)((JSONObject)json.get("main")).get("pressure");
-        return (temp); }
+        long temp = (long)((JSONObject)json.get("main")).get("pressure");
+        return ((double)temp); }
     /**
      * Used to get current humidity in the city
      * @return      percentage of humidity
@@ -73,15 +73,21 @@ public class DataPull {
      * @return      wind speed, meter/second
      */
     public double getWindSpeed() {
-        double temp = (double)((JSONObject)json.get("wind")).get("speed");
-        return (temp); }
+        long temp = (long)((JSONObject)json.get("wind")).get("speed");
+        return ((double)temp); }
     /**
      * Used to get current wind direction
      * @return      wind direction, degrees
      */
     public double getWindDegree() {
-        double temp = (double)((JSONObject)json.get("wind")).get("deg");
-        return (temp); }
+        long temp;
+        try {
+            temp = (long) ((JSONObject) json.get("wind")).get("deg");
+        }catch (NullPointerException e)
+        {
+            temp = 0;
+        }
+            return(temp);}
     /**
      * Used to get cloudiness percentage
      * @return      cloudiness percentage

@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f3578007-9193-463a-9b18-ea5393d1e3ba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CityInfo.java" afterPath="$PROJECT_DIR$/src/CityInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RandomWeatherComparer.java" afterPath="$PROJECT_DIR$/src/RandomWeatherComparer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataPull.java" afterPath="$PROJECT_DIR$/src/DataPull.java" />
     </list>
     <ignored path="LocationBuddy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="DataPull.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DataPull.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2003891">
-              <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+            <state vertical-scroll-proportion="1.5214008">
+              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -142,7 +140,6 @@
         <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/Test2.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/DataPull.java" />
         <option value="$PROJECT_DIR$/LocationBuddy.iml" />
         <option value="$PROJECT_DIR$/src/CityGeneratorFactory.java" />
         <option value="$PROJECT_DIR$/src/RandomCity2.java" />
@@ -153,6 +150,7 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/CityInfo.java" />
         <option value="$PROJECT_DIR$/src/RandomWeatherComparer.java" />
+        <option value="$PROJECT_DIR$/src/DataPull.java" />
       </list>
     </option>
   </component>
@@ -778,7 +776,7 @@
       <workItem from="1449335540863" duration="9226000" />
       <workItem from="1449345324860" duration="5718000" />
       <workItem from="1449352733207" duration="4319000" />
-      <workItem from="1449360883413" duration="14126000" />
+      <workItem from="1449360883413" duration="14568000" />
     </task>
     <task id="LOCAL-00001" summary="Added test classes for more clear idea of how hiarchy in Intellij works vs Netbeans for George+Neethan">
       <created>1448430874606</created>
@@ -840,11 +838,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449372455177</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Finished implementing City Info class for the most part, the biggest part now is error testing and catching cases where user input is wrong i.e wrong city, or city with a space in it">
+      <created>1449375121485</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1449375121485</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47052000" />
+    <option name="totallyTimeSpent" value="47494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
@@ -897,7 +901,8 @@
     <MESSAGE value="Added an abstract class and two subclasses for scene switching to represent a sort of scene switching dispatcher. Also added an extra function in the main file that redirects from main to other functions, and a MainMenuDirect class that directs any scenes (other than main scene) back to the main scene." />
     <MESSAGE value="Fixed small errors and redundancies." />
     <MESSAGE value="Implemented the CityInfo class, working with example city Toronto. Next step here is to allow the user to input their own city" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented the CityInfo class, working with example city Toronto. Next step here is to allow the user to input their own city" />
+    <MESSAGE value="Finished implementing City Info class for the most part, the biggest part now is error testing and catching cases where user input is wrong i.e wrong city, or city with a space in it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished implementing City Info class for the most part, the biggest part now is error testing and catching cases where user input is wrong i.e wrong city, or city with a space in it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1264,8 +1269,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DataPull.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2003891">
-          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+        <state vertical-scroll-proportion="1.5214008">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding />
         </state>
       </provider>
