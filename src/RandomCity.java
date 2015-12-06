@@ -10,9 +10,9 @@ public class RandomCity extends CityGenerator {
 
         //Creating a random object which will generate the random number.
         Random random = new Random();
-
+// ROME, LODNON, NEW YORK, BARC, toronTO, SING, paris, madrid, vancouver
         //Creating the list of cities.
-        String[] cityList = new String[]{"Toronto", "NewYork", "London", "Paris", "Rome", "Vancouver", "Barcelona", "Madrid", "Dubai", "Singapore"};
+        String[] cityList = new String[]{"Toronto", "NewYork", "London", "Paris", "Rome", "Vancouver", "Barcelona", "Madrid", "Vaughan", "Singapore"};
               //if more cities need to be added: + "Amsterdam"+ "Athens"+"Brussels"+"Milan"+"Beijing"};
 
         //creating a random number count which goes from 0 to 14 which is the size of the array.
@@ -25,9 +25,6 @@ public class RandomCity extends CityGenerator {
         setWeather(city1.getTemp());
         setWindSpeed(city1.getWindSpeed());
         setName(cityList[ranNum]);
-
-
-
 
     }
 }
