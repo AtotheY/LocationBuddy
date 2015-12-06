@@ -97,7 +97,7 @@ public class CityInfo  extends MainMenuDirect{
         Main main2 = new Main();
         String name2 = main2.getCity();
         Label name1 = new Label(name2);
-        name1.setStyle("-fx-font: 22 arial; -fx-text-fill: #4c6b87;");
+        name1.setStyle("-fx-font: 22 arial; -fx-text-fill: #527ecf;");
         grid.add (name1,1,0);
         group.selectedToggleProperty().addListener(new ChangeListener<Toggle>(){
             public void changed(ObservableValue<? extends Toggle> ov,
@@ -111,39 +111,51 @@ public class CityInfo  extends MainMenuDirect{
 
                     if (group.getSelectedToggle() == cloud) {
                         out = new Label(name+"'s cloudy percentage is: " + Long.toString(tor.getCloudyPercent()) + "%");
+                        out.setStyle("-fx-text-fill: #66c8ff;");
                         grid.add(out, 2, 7);}
                     else if (group.getSelectedToggle() == desc) {
                         out = new Label(name+"'s weather is: " + tor.getDesc());
+                        out.setStyle("-fx-text-fill: #ffedf0;");
                         grid.add(out, 2, 2);}
                     else if (group.getSelectedToggle() == maxtemp) {
                         out = new Label(name+"'s max temp today is: " + Double.toString(tor.getMaxTemp()) + " degrees celcius");
+                        out.setStyle("-fx-text-fill: #ff4034;");
                         grid.add(out, 2, 3);}
                     else if (group.getSelectedToggle() == mintemp) {
                         out = new Label(name+"'s min temp today is: " + Double.toString(tor.getMinTemp()) + " degrees celcius");
+                        out.setStyle("-fx-text-fill: #4d6cff;");
                         grid.add(out, 2, 4);}
                     else if (group.getSelectedToggle() == avgtemp) {
                         out = new Label(name+"'s average temp today is: " + Double.toString(tor.getTemp()) + " degrees celcius");
+                        out.setStyle("-fx-text-fill: #c6a1ff;");
                         grid.add(out, 2, 5);}
                     else if (group.getSelectedToggle() == humid) {
                         out = new Label(name+"'s humidity percentage is : " + Double.toString(tor.getTemp()) + "%");
+                        out.setStyle("-fx-text-fill: #ffb88d;");
                         grid.add(out, 2, 6);}
                     else if (group.getSelectedToggle() == sealev) {
                         out = new Label(name+"'s Sea Level Pressure is : " + Double.toString(tor.getTemp()) + "hPa");
+                        out.setStyle("-fx-text-fill: #474cff;");
                         grid.add(out, 2, 9);}
                     else if (group.getSelectedToggle() == pressure) {
                             out = new Label(name+"'s Air Pressure is : " + Double.toString(tor.getPressure()) + " hPa");
+                        out.setStyle("-fx-text-fill: #47ffda;");
                             grid.add(out, 2, 8);}
                     else if (group.getSelectedToggle() == windd) {
                         out = new Label(name+"'s Wind Degree is : " + Double.toString(tor.getWindDegree()) + " degrees");
+                        out.setStyle("-fx-text-fill: #b4ff7c;");
                         grid.add(out, 2, 11);}
                     else if (group.getSelectedToggle() == winds) {
                         out = new Label(name+"'s Wind Speed is : " + Double.toString(tor.getWindSpeed()) + " m/s");
+                        out.setStyle("-fx-text-fill: #7dffb2;");
                         grid.add(out, 2, 10);}
                     else if (group.getSelectedToggle() == sunr) {
                         out = new Label(name+"'s next sunrise is : " + tor.getSunriseDate());
+                        out.setStyle("-fx-text-fill: #e8ff60;");
                         grid.add(out, 2, 12);}
                     else if (group.getSelectedToggle() == suns) {
                         out = new Label(name+"'s next sunset is : " + tor.getSunsetDate());
+                        out.setStyle("-fx-text-fill: #ff7a45;");
                         grid.add(out, 2, 13);}
                     else
                         out = new Label("Please make a selection!");
@@ -152,7 +164,8 @@ public class CityInfo  extends MainMenuDirect{
 
             }
         });
-        Scene scene = new Scene(grid, 700, 700);
+        grid.setStyle("-fx-background-image: url('Toronto.jpg')");
+        Scene scene = new Scene(grid, 1200, 500);
         primaryStage.setScene(scene);
         primaryStage.show();
     }

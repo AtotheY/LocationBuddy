@@ -32,7 +32,7 @@ public class MainRandomCompare {
     }
 
     public String city1name () {
-       return("City: "+x.getName());}
+       return(x.getName());}
 
     public String city1temp () {
         return("The weather is  "+ x.getWeather()+ " degrees celsius");}
@@ -41,7 +41,7 @@ public class MainRandomCompare {
         return ("The windspeed is " + x.getWindSpeed()+" m/s");}
 
     public String city2name () {
-        return("City: "+y.getName());}
+        return(y.getName());}
 
     public String city2temp () {
         return("The weather is  "+ y.getWeather()+ " degrees celsius");}

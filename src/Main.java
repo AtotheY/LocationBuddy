@@ -37,24 +37,24 @@ public class Main extends Application {
         scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
 
         GridPane grid = new GridPane();
-        grid.setHgap(10);
+        grid.setStyle("-fx-background-image: url('Toronto.jpg')");
+        grid.setHgap(20);
         grid.setVgap(10);
         grid.setPadding(new Insets(0, 100, 0, 100));
 
         DropShadow shadow = new DropShadow();
         Button random =  new Button ("Compare two random cities");
-        grid.add(random,6,1);
+        grid.add(random,0,0);
         Button comp = new Button ("Get info on city");
-        grid.add(comp,6,3);
+        grid.add(comp,7,0);
         Button exit = new Button ("Exit");
 
         RandomWeatherComparer rand = new RandomWeatherComparer();
         CityInfo cityInfo = new CityInfo();
-        Scene scene = new Scene(grid, 700, 700);
 
         TextField textField = new TextField();
         textField.setPromptText("City Name (no spaces)");
-        grid.add(textField,5,3);
+        grid.add(textField,6,0);
 
         random.setOnAction(new EventHandler<ActionEvent>() {
            @Override
@@ -95,6 +95,7 @@ public class Main extends Application {
         );
         String exitStyle = "-fx-font: 22 arial; -fx-base: #cc0000;";
         exit.setStyle(exitStyle);
+        grid.add(exit,0,5);
         exit.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -102,7 +103,7 @@ public class Main extends Application {
                 System.exit(0);
             }
         });
-        grid.add(exit,6,8);
+        Scene scene = new Scene(grid, 1200, 500);
 
         primaryStage.setScene(scene);
         primaryStage.show();
