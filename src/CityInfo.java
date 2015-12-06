@@ -20,8 +20,6 @@ public class CityInfo  extends MainMenuDirect{
         scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         GridPane grid = new GridPane();
         Button ret = new Button("Return to main menu");
-        Main back = new Main();
-        Stage secondary = new Stage();
         ret.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

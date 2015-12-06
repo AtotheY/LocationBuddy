@@ -21,8 +21,6 @@ public class RandomWeatherComparer extends MainMenuDirect{
         scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         GridPane grid = new GridPane();
         Button ret = new Button("Return to main menu");
-        Main back = new Main();
-        Stage secondary = new Stage();
         MainRandomCompare randComp = new MainRandomCompare();
         randComp.setup();
         Label name1 = new Label(randComp.city1name());
