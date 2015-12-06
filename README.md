@@ -77,9 +77,9 @@ New York  is hotter today!
  This is basically a fully functional local java api I made for ease of access. Please make good use of it! Think of cool and interesting ways to use the data provided :).
  
  
- # The final report
- The final report should be 4-6 pages, not including appendices.  
- ** Please use Times New Roman font size 12  
+# The final report
+The final report should be 4-6 pages, not including appendices.  
+** Please use Times New Roman font size 12  
    
  Here is the format and the specifications of the report, summed up.
  ```
@@ -108,7 +108,7 @@ Second part: Actual report
 -How did we divide the work?  
  ```
  
-Here is how we are going to split the report up.
+# Here is how we are going to split the report up.
 
 ```
 Cover page - NEETHAN 
