@@ -130,11 +130,11 @@ public class CityInfo  extends MainMenuDirect{
                         out.setStyle("-fx-text-fill: #c6a1ff;");
                         grid.add(out, 2, 5);}
                     else if (group.getSelectedToggle() == humid) {
-                        out = new Label(name+"'s humidity percentage is : " + Double.toString(tor.getTemp()) + "%");
+                        out = new Label(name+"'s humidity percentage is : " + Double.toString(tor.getHumidity()) + "%");
                         out.setStyle("-fx-text-fill: #ffb88d;");
                         grid.add(out, 2, 6);}
                     else if (group.getSelectedToggle() == sealev) {
-                        out = new Label(name+"'s Sea Level Pressure is : " + Double.toString(tor.getTemp()) + "hPa");
+                        out = new Label(name+"'s Sea Level Pressure is : " + Double.toString(tor.getSeaLevel()) + "hPa");
                         out.setStyle("-fx-text-fill: #474cff;");
                         grid.add(out, 2, 9);}
                     else if (group.getSelectedToggle() == pressure) {

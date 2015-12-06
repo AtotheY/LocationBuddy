@@ -10,7 +10,7 @@ import java.util.Objects;
 /**
  * Created by AnthonyS on 11/27/2015.
  * @author Anthony Sistilli sistillianthony@gmail.com
- * @version 1.1
+ * @version 1.2
  * @since 2015-11-27
  */
 public class DataPull {
@@ -97,9 +97,15 @@ public class DataPull {
      * @return      sea level pressure, hPa
      */
     public double getSeaLevel() {
-        Object o = ((JSONObject)json.get("main")).get("sea_level");
-        double temp = toDouble(o);
-        return (temp);}
+        double temp;
+        try {
+            Object o = ((JSONObject)json.get("main")).get("sea_level");
+            temp = toDouble(o);
+        }catch (NullPointerException e)
+        {
+            temp = 0;
+        }
+        return(temp);}
     /**
      * Used to get current wind speed of city
      * @return      wind speed, meter/second
