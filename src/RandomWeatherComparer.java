@@ -13,13 +13,7 @@ import javafx.stage.Stage;
 /**
  * Created by AnthonyS on 12/5/2015.
  */
-public class RandomWeatherComparer extends Application{
-
-
-    public static void main (String args[]) throws Exception
-    {
-        launch(args);
-    }
+public class RandomWeatherComparer extends MainMenuDirect{
 
     public void start (Stage primaryStage) throws Exception {
 
@@ -44,12 +38,7 @@ public class RandomWeatherComparer extends Application{
         ret.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                try {
-                    back.start(secondary);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                primaryStage.hide();
+                backToMain(primaryStage);
             }
         });
         grid.add(name1,5,2);
