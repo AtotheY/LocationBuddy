@@ -16,14 +16,14 @@ public class DataObs implements Observers {
     public DataObs(Updates datGrab){
         this.datGrab = datGrab;
         this.obsId = ++idTrack;
-        System.out.println("New Observer" + this.obsId);
+        System.out.println("New Observer: " + this.obsId);
         datGrab.regObs(this);
     }
 
 
     public void printDat(){
 
-        System.out.println(obsId + "\n" + "Wind Speed has been updated to: " +winds + "\nPressure has been updated to: " + press + "\nHumidity has been updated to: " + humid );
+        System.out.println("\n" + "Wind Speed has been updated to: " +winds + "\nPressure has been updated to: " + press + "\nHumidity has been updated to: " + humid );
 
     }
     @Override

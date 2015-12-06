@@ -38,7 +38,7 @@ public class DataPull {
      * @return      temperature in hectopascals (hPa)
      */
     public double getPressure() {
-        double temp = (double)((JSONObject)json.get("main")).get("pressure");
+        double temp = (long)((JSONObject)json.get("main")).get("pressure");
         return (temp); }
     /**
      * Used to get current humidity in the city
