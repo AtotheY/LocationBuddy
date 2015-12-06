@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.layout.GridPane;
@@ -62,20 +63,27 @@ public class Main extends Application {
                redirect(rand);
            }
         });
-
+        final Label error = new Label ("Sorry, invalid input!");
+        String errorStyle = "-fx-font: 14 arial; -fx-text-fill: #cc0000;";
+        error.setStyle(errorStyle);
         comp.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 textField.getText();
+                grid.getChildren().remove(error);
 
-                if (textField.getText() != null)
+                if (textField.getText() != null && !(textField.getText().isEmpty()))
                 {
                     city = textField.getText();
                     setCity(city);
                     System.out.println ("Sending city: "+ city);
+                    redirect(cityInfo);
+                }
+                else {
+                    grid.add(error, 5, 4);
                 }
                 comp.setEffect(shadow);
-                redirect(cityInfo);
+
             }}
         );
         String exitStyle = "-fx-font: 22 arial; -fx-base: #cc0000;";
@@ -87,7 +95,7 @@ public class Main extends Application {
                 System.exit(0);
             }
         });
-        grid.add(exit,6,7);
+        grid.add(exit,6,8);
 
         primaryStage.setScene(scene);
         primaryStage.show();

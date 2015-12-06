@@ -72,9 +72,9 @@ public class DataPull {
      * Used to get current wind speed of city
      * @return      wind speed, meter/second
      */
-    public double getWindSpeed() {
+    public long getWindSpeed() {
         long temp = (long)((JSONObject)json.get("wind")).get("speed");
-        return ((double)temp); }
+        return (temp); }
     /**
      * Used to get current wind direction
      * @return      wind direction, degrees
