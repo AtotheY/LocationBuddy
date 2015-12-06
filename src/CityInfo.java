@@ -137,7 +137,7 @@ public class CityInfo  extends MainMenuDirect{
                         out = new Label(name+"'s Wind Degree is : " + Double.toString(tor.getWindDegree()) + " degrees");
                         grid.add(out, 2, 11);}
                     else if (group.getSelectedToggle() == winds) {
-                        out = new Label(name+"'s Wind Speed is : " + Double.toString(tor.getPressure()) + " m/s");
+                        out = new Label(name+"'s Wind Speed is : " + Double.toString(tor.getWindSpeed()) + " m/s");
                         grid.add(out, 2, 10);}
                     else if (group.getSelectedToggle() == sunr) {
                         out = new Label(name+"'s next sunrise is : " + tor.getSunriseDate());

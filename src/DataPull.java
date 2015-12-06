@@ -16,6 +16,7 @@ import java.util.Objects;
 public class DataPull {
     private String city = "";
     private JSONObject json = null;
+    private boolean found = true;
     // WEATHER JSON OBJECT EXAMPLE
     //{"coord":{"lon":-0.13,"lat":51.51},"weather":[{"id":800,"main":"Clear","description":"Sky is Clear","icon":"01n"}],"base":"cmc stations","main":
     //{"temp":276.875,"pressure":1014.64,"humidity":91,"temp_min":276.875,"temp_max":276.875,"sea_level":1025.06,"grnd_level":1014.64},"wind":{"speed":5.96,"deg":281.008},"clouds":{
@@ -24,6 +25,14 @@ public class DataPull {
     // this method was added in due to the fact that for wind speed, wind degree, and all temp returns, the API would return a random combination of Longs+Doubles,
     // longs if the value was whole, double if the value was decimal. This takes that value, checks if it's a long, and converts it to double by adding a decimal point.
     // this actually saves a lot of time debugging a "class exception" error T_T....
+    public boolean exists()
+    {
+        if (found)
+            return true;
+        else
+            return false;
+    }
+
     private double toDouble(Object o)
     {
         String tempO = o.toString();
@@ -57,8 +66,9 @@ public class DataPull {
      * @return      temperature in hectopascals (hPa)
      */
     public double getPressure() {
-        long temp = (long)((JSONObject)json.get("main")).get("pressure");
-        return ((double)temp); }
+        Object o = ((JSONObject)json.get("main")).get("pressure");
+        double temp = toDouble(o);
+        return (temp); }
     /**
      * Used to get current humidity in the city
      * @return      percentage of humidity
@@ -87,7 +97,8 @@ public class DataPull {
      * @return      sea level pressure, hPa
      */
     public double getSeaLevel() {
-        double temp = (double)((JSONObject)json.get("main")).get("sea_level");
+        Object o = ((JSONObject)json.get("main")).get("sea_level");
+        double temp = toDouble(o);
         return (temp);}
     /**
      * Used to get current wind speed of city
@@ -142,9 +153,14 @@ public class DataPull {
         apiCall(q);
     }
 
-    private void apiCall (String q) throws Exception
-    {
-        String temp = "http://api.openweathermap.org/data/2.5/weather?q="+q+"&appid=544a581cc6943eb053b82bab0cdad4f9";
+    private void apiCall (String q) throws Exception {
+        if (q.contains(" ")) {
+            System.err.println("Name can not contain spaces!");
+            found = false;
+            return;
+        }
+
+        String temp = "http://api.openweathermap.org/data/2.5/weather?q=" + q + "&appid=544a581cc6943eb053b82bab0cdad4f9";
         URL url = new URL(temp);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
@@ -162,8 +178,13 @@ public class DataPull {
         while ((inputLine = in.readLine()) != null) {
             response.append(inputLine);
         }
-        String s=response.toString();
+        String s = response.toString();
         JSONObject jsonTemp = (JSONObject) new JSONParser().parse(s);
         json = jsonTemp;
+        String o = json.toString();
+        if (o.contains("Not found city"))
+        {
+            found = false;
+        }
     }
 }

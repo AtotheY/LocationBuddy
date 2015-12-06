@@ -69,22 +69,29 @@ public class Main extends Application {
         comp.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                textField.getText();
-                grid.getChildren().remove(error);
+                try {
+                    textField.getText();
+                    grid.getChildren().remove(error);
+                    if (textField.getText() != null && !(textField.getText().isEmpty())) {
+                        city = textField.getText();
+                        if(goodName(city)) {
+                            setCity(city);
+                            System.out.println("Sending city: " + city);
+                            redirect(cityInfo);
+                        }
+                        else
+                        {
+                            grid.add(error,5,4);
+                        }
+                        } else {
+                        grid.add(error, 5, 4);
+                    }
+                    comp.setEffect(shadow);
+                } catch (Exception e){
 
-                if (textField.getText() != null && !(textField.getText().isEmpty()))
-                {
-                    city = textField.getText();
-                    setCity(city);
-                    System.out.println ("Sending city: "+ city);
-                    redirect(cityInfo);
                 }
-                else {
-                    grid.add(error, 5, 4);
-                }
-                comp.setEffect(shadow);
-
             }}
+
         );
         String exitStyle = "-fx-font: 22 arial; -fx-base: #cc0000;";
         exit.setStyle(exitStyle);
@@ -111,6 +118,16 @@ public class Main extends Application {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private boolean goodName (String n) throws Exception
+    {
+        DataPull temp = new DataPull(n);
+        if (!temp.exists())
+        {
+            return false;
+        }
+        return true;
     }
 
     public void setCity(String c)

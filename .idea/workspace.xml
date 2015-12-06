@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f3578007-9193-463a-9b18-ea5393d1e3ba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CityGenerator.java" afterPath="$PROJECT_DIR$/src/CityGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CityInfo.java" afterPath="$PROJECT_DIR$/src/CityInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataPull.java" afterPath="$PROJECT_DIR$/src/DataPull.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RandomCity.java" afterPath="$PROJECT_DIR$/src/RandomCity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="LocationBuddy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +28,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DataPull.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DataPull.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6692607">
+              <caret line="160" column="8" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.39688715">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+              <folding>
+                <element signature="e#4191#4192#0" expanded="true" />
+                <element signature="e#4215#4216#0" expanded="true" />
+                <element signature="e#4249#4250#0" expanded="true" />
+                <element signature="e#4276#4277#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CityInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CityInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="139" column="103" selection-start-line="139" selection-start-column="103" selection-end-line="139" selection-end-column="103" />
               <folding />
             </state>
           </provider>
@@ -75,11 +101,11 @@
         <option value="$PROJECT_DIR$/src/DataObs.java" />
         <option value="$PROJECT_DIR$/src/dataGrab.java" />
         <option value="$PROJECT_DIR$/src/MainObs.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/RandomCity.java" />
-        <option value="$PROJECT_DIR$/src/DataPull.java" />
         <option value="$PROJECT_DIR$/src/CityGenerator.java" />
         <option value="$PROJECT_DIR$/src/CityInfo.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/DataPull.java" />
       </list>
     </option>
   </component>
@@ -708,7 +734,7 @@
       <workItem from="1449300001973" duration="50000" />
       <workItem from="1449349565559" duration="10132000" />
       <workItem from="1449368281229" duration="6449000" />
-      <workItem from="1449377338195" duration="2575000" />
+      <workItem from="1449377338195" duration="4320000" />
     </task>
     <task id="LOCAL-00001" summary="Added test classes for more clear idea of how hiarchy in Intellij works vs Netbeans for George+Neethan">
       <created>1448430874606</created>
@@ -770,11 +796,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449372975256</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Actually fixed DataPull by converting any long values to double, if there are any. Did this by adding a toDouble function. &#10;Next step is to add error checking for user inputted names (i.e names with spaces, and names of cities that aren't in API database)&#10;">
+      <created>1449380049200</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1449380049200</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34903000" />
+    <option name="totallyTimeSpent" value="36648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
@@ -796,7 +828,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39900866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -854,7 +886,8 @@
     <MESSAGE value="Missed a Class :D" />
     <MESSAGE value="Added few extra comments" />
     <MESSAGE value="Made the MainObs class to run everything" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made the MainObs class to run everything" />
+    <MESSAGE value="Actually fixed DataPull by converting any long values to double, if there are any. Did this by adding a toDouble function. &#10;Next step is to add error checking for user inputted names (i.e names with spaces, and names of cities that aren't in API database)&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actually fixed DataPull by converting any long values to double, if there are any. Did this by adding a toDouble function. &#10;Next step is to add error checking for user inputted names (i.e names with spaces, and names of cities that aren't in API database)&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -869,7 +902,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
-          <folding />
+          <folding>
+            <element signature="e#4191#4192#0" expanded="true" />
+            <element signature="e#4215#4216#0" expanded="true" />
+            <element signature="e#4249#4250#0" expanded="true" />
+            <element signature="e#4276#4277#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -877,7 +915,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#4191#4192#0" expanded="true" />
+            <element signature="e#4215#4216#0" expanded="true" />
+            <element signature="e#4249#4250#0" expanded="true" />
+            <element signature="e#4276#4277#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -885,7 +928,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#4191#4192#0" expanded="true" />
+            <element signature="e#4215#4216#0" expanded="true" />
+            <element signature="e#4249#4250#0" expanded="true" />
+            <element signature="e#4276#4277#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -893,7 +941,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#4191#4192#0" expanded="true" />
+            <element signature="e#4215#4216#0" expanded="true" />
+            <element signature="e#4249#4250#0" expanded="true" />
+            <element signature="e#4276#4277#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -908,7 +961,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -916,7 +971,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding />
+          <folding>
+            <element signature="e#4191#4192#0" expanded="true" />
+            <element signature="e#4215#4216#0" expanded="true" />
+            <element signature="e#4249#4250#0" expanded="true" />
+            <element signature="e#4276#4277#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -931,7 +991,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -939,7 +1001,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding />
+          <folding>
+            <element signature="e#4191#4192#0" expanded="true" />
+            <element signature="e#4215#4216#0" expanded="true" />
+            <element signature="e#4249#4250#0" expanded="true" />
+            <element signature="e#4276#4277#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -954,7 +1021,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -962,7 +1031,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#4191#4192#0" expanded="true" />
+            <element signature="e#4215#4216#0" expanded="true" />
+            <element signature="e#4249#4250#0" expanded="true" />
+            <element signature="e#4276#4277#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -977,7 +1051,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -985,7 +1061,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#4191#4192#0" expanded="true" />
+            <element signature="e#4215#4216#0" expanded="true" />
+            <element signature="e#4249#4250#0" expanded="true" />
+            <element signature="e#4276#4277#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1061,14 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataPull.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CityGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1088,16 +1161,31 @@
     <entry file="file://$PROJECT_DIR$/src/CityInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
+          <caret line="139" column="103" selection-start-line="139" selection-start-column="103" selection-end-line="139" selection-end-column="103" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.39688715">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+          <folding>
+            <element signature="e#4191#4192#0" expanded="true" />
+            <element signature="e#4215#4216#0" expanded="true" />
+            <element signature="e#4249#4250#0" expanded="true" />
+            <element signature="e#4276#4277#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataPull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6692607">
+          <caret line="160" column="8" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
