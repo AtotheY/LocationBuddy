@@ -75,3 +75,88 @@ New York  is hotter today!
 ````
 *Note you can probably cast the temp to int to truncate the value*
  This is basically a fully functional local java api I made for ease of access. Please make good use of it! Think of cool and interesting ways to use the data provided :).
+ 
+ 
+# The final report
+The final report should be 4-6 pages, not including appendices.  
+** Please use Times New Roman font size 12  
+   
+ Here is the format and the specifications of the report, summed up.
+ ```
+Cover page: Cover with all of our names, section, student #, and project name (Location Buddy)  
+  
+First part: Appendices (DOES NOT COUNT TOWARDS PAGE COUNT) 
+    
+Appendix 1: Write specifications for all the methods of any two classes
+Appendix 2: UML diagrams created using Violet UML Editor (4 kinds –Use Case Dia-gram(s), Class diagram(s), Sequence diagram(s) and, either Activity diagram(s) or State diagram(s))  
+Appendix 3: Appendix 3: Javadoc for all the classes.  
+  
+Second part: Actual report  
+  
+-Problem Description (The actual physical problem our program helps solve)  
+-Design  
+  -Modules description and explain how these modules are decomposed
+  -Provide brief overview of each class.
+  -Describe the UML diagrams that you have provided in Appendix 1
+  -Use at least two design patterns in your project and provide rationale for using them.
+    
+-Testing
+  -Explain how you testedall your classes
+  -In the report, provide test cases (blackbox and whitebox) for testing all themethodsof only one of the eight classes
+  
+-Conclusion (What did you learn?  
+-How did we divide the work?  
+ ```
+ 
+# Here is how we are going to split the report up.
+
+```
+Cover page - NEETHAN 
+
+Appendix 1 - ANTHONY
+Appendix 2 - ANTHONY
+Appendix 3 - ANTHONY  
+  
+Problem Description - ANTHONY (1/2 page)
+
+Modules description and explain how these modules are decomposed (limit to 6-8 sentances)
+        - Random Compare Module - NEETHAN
+        - Get City Info Module - ANTHONY
+        - Observer Module - GEORGE
+  
+Provide brief overview of each class (Limit this to 3-4 sentances each)
+        (Alphabetical Order)
+        - CityGenerator - NEETHAN
+        - CityGeneratorFactory - NEETHAN
+        - CityInfo - ANTHONY
+        - dataGrab - GEORGE 
+        - DataObs - GEORGE
+        - DataPull - ANTHONY
+        - Main - ANTHONY
+        - MainObs - GEORGE + ANTOHNY (message me when doing this part)
+        - MainMenuDirect - ANTOHNY
+        - MainRandomCompare - ANTHONY
+        - Observers - GEORGE
+        - RandomCity - NEETHAN
+        - RandomWeatherComparer - ANTHONY
+        - Updates - GEORGE
+        
+Describe the UML diagrams that you have provided in Appendix 1 - ANTHONY
+        
+Use at least two design patterns in your project and provide rationale for using them.
+        - Observer - GEORGE (ask me when you're doing this part, since I changed some of your methods.)
+        - Factory Method - NEETHAN
+    
+Explain how you tested all your classes - ANTHONY
+
+Blackbox+Whitebox Testing - ANTHONY
+  
+Conclusion (What did you learn? - ANTHONY  
+
+How did we divide the work? - DONE
+ Random city Module - Neethan
+ Info on City - Anthony
+ Track Toronto's Weather - George
+ UI - Anthony  
+
+```
