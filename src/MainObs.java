@@ -44,7 +44,6 @@ public class MainObs extends MainMenuDirect {
         boolean val3 = rand.nextBoolean();
 
 
-
         if (iteration > 0.0)
         {
             if (val)

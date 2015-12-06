@@ -1,7 +1,7 @@
 /**
  * Created by neethan on 2015-12-02.
  */
-//This abstract class will set and get the weather, windspeed and name of the city.
+//This abstract class will set and get the weather, windspeed and name of each city.
 public abstract class CityGenerator {
 
     //instance variables.
@@ -14,20 +14,20 @@ public abstract class CityGenerator {
     {
         return temp;
     }
-
     public void setWeather(double nam)
     {
         temp = nam;
     }
+
     public double getWindSpeed()
     {
         return windSpeed;
     }
-
     public void setWindSpeed(double speed)
     {
         windSpeed = speed;
     }
+
     public String getName()
     {
         return name;
