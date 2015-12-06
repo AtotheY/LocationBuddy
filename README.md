@@ -133,7 +133,7 @@ Provide brief overview of each class (Limit this to 3-4 sentances each)
         - DataObs - GEORGE
         - DataPull - ANTHONY
         - Main - ANTHONY
-        - MainObs - GEORGE
+        - MainObs - GEORGE + ANTOHNY (message me when doing this part)
         - MainMenuDirect - ANTOHNY
         - MainRandomCompare - ANTHONY
         - Observers - GEORGE
