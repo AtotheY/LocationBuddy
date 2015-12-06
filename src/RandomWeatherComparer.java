@@ -24,9 +24,9 @@ public class RandomWeatherComparer extends MainMenuDirect{
         MainRandomCompare randComp = new MainRandomCompare();
         randComp.setup();
         Label name1 = new Label(randComp.city1name());
-        name1.setStyle("-fx-font: 22 arial; -fx-base: #1691cc;");
+        name1.setStyle("-fx-font: 22 arial; -fx-text-fill: #4c6b87;");
         Label name2 = new Label(randComp.city2name());
-        name2.setStyle("-fx-font: 22 arial; -fx-base: #46cc25;");
+        name2.setStyle("-fx-font: 22 arial; -fx-text-fill: #4c6b87");
         Label temp1 = new Label(randComp.city1temp());
         Label wind1 = new Label(randComp.city1wind());
         Label temp2 = new Label(randComp.city2temp());

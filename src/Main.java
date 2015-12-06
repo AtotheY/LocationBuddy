@@ -44,7 +44,6 @@ public class Main extends Application {
         Button comp = new Button ("Get info on a city");
         grid.add(comp,6,3);
         Button exit = new Button ("Exit");
-        grid.add(exit,6,7);
 
         RandomWeatherComparer rand = new RandomWeatherComparer();
         CityInfo cityInfo = new CityInfo();
@@ -63,7 +62,8 @@ public class Main extends Application {
                 redirect(cityInfo);
             }}
         );
-        exit.setStyle("-fx-font: 22 arial; -fx-base: #cc0000;");
+        String exitStyle = "-fx-font: 22 arial; -fx-base: #cc0000;";
+        exit.setStyle(exitStyle);
         exit.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -71,6 +71,8 @@ public class Main extends Application {
                 System.exit(0);
             }
         });
+        grid.add(exit,6,7);
+
         primaryStage.setScene(scene);
         primaryStage.show();
     }
