@@ -23,6 +23,10 @@ public class MainRandomCompare {
         factory2 = new CityGeneratorFactory();
         x = factory.generateCity();
         y = factory2.generateCity();
+        while (y.getName().equals(x.getName()))
+        {
+            y = factory2.generateCity();
+        }
 
         //instance variables which are equal to their corresponding values.
         weather1 = x.getWeather();
