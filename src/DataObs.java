@@ -3,15 +3,26 @@
  */
 public class DataObs implements Observers {
 
-    private double winds;
-    private double press;
-    private long humid;
+    private static double winds;
+    private static double press;
+    private static long humid;
 
     private static int idTrack = 0;
     private int obsId;
     private Updates datGrab;
 
-
+    public double getWind()
+    {
+        return winds;
+    }
+    public double getPress()
+    {
+        return press;
+    }
+    public long getHumid()
+    {
+        return humid;
+    }
     //Increments observer ID; Creates and initializes object of type Updates for the subject's interface.
     public DataObs(Updates datGrab){
         this.datGrab = datGrab;

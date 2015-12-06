@@ -47,7 +47,11 @@ public class Main extends Application {
         grid.add(random,0,0);
         Button comp = new Button ("Get info on city");
         grid.add(comp,7,0);
+        Button obs = new Button ("Track Toronto's Weather");
+        grid.add (obs,14,0);
+
         Button exit = new Button ("Exit");
+
 
         RandomWeatherComparer rand = new RandomWeatherComparer();
         CityInfo cityInfo = new CityInfo();
@@ -55,6 +59,15 @@ public class Main extends Application {
         TextField textField = new TextField();
         textField.setPromptText("City Name (no spaces)");
         grid.add(textField,6,0);
+
+        MainObs observer = new MainObs();
+        obs.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                obs.setEffect(shadow);
+                redirect(observer);
+            }
+        });
 
         random.setOnAction(new EventHandler<ActionEvent>() {
            @Override
