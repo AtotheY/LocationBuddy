@@ -2,7 +2,7 @@
 /**
  * Created by Serban Badea  on 12/5/2015.
  */
-public class Main {
+public class MainObs {
 
     //All you need is in this main method
     //Two cities are created as well as a corresponding Subject for each city.
