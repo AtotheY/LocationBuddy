@@ -16,6 +16,7 @@ import javafx.stage.Stage;
  */
 public class CityInfo  extends MainMenuDirect{
 
+    private String city = "";
     public void start (Stage primaryStage) throws Exception {
 
         Text scenetitle = new Text("City Info");
@@ -96,49 +97,52 @@ public class CityInfo  extends MainMenuDirect{
         grid.add(suns,1,13);
         grid.add(new Label(" "),1,14);
         grid.add(ret,1,15);
+        System.out.println (" asdf");
         group.selectedToggleProperty().addListener(new ChangeListener<Toggle>(){
             public void changed(ObservableValue<? extends Toggle> ov,
                                 Toggle toggle, Toggle new_toggle) {
                 try {
+                    Main main = new Main();
+                    String name = main.getCity();
+                    DataPull tor = new DataPull(name);
 
-                    DataPull tor = new DataPull("Toronto");
                     Label out = null;
 
                     if (group.getSelectedToggle() == cloud) {
-                        out = new Label("Toronto's cloudy percentage is: " + Long.toString(tor.getCloudyPercent()) + "%");
+                        out = new Label(name+"'s cloudy percentage is: " + Long.toString(tor.getCloudyPercent()) + "%");
                         grid.add(out, 2, 7);}
                     else if (group.getSelectedToggle() == desc) {
-                        out = new Label("Toronto's weather is: " + tor.getDesc());
+                        out = new Label(name+"'s weather is: " + tor.getDesc());
                         grid.add(out, 2, 2);}
                     else if (group.getSelectedToggle() == maxtemp) {
-                        out = new Label("Toronto's max temp today is: " + Double.toString(tor.getMaxTemp()) + " degrees celcius");
+                        out = new Label(name+"'s max temp today is: " + Double.toString(tor.getMaxTemp()) + " degrees celcius");
                         grid.add(out, 2, 3);}
                     else if (group.getSelectedToggle() == mintemp) {
-                        out = new Label("Toronto's min temp today is: " + Double.toString(tor.getMinTemp()) + " degrees celcius");
+                        out = new Label(name+"'s min temp today is: " + Double.toString(tor.getMinTemp()) + " degrees celcius");
                         grid.add(out, 2, 4);}
                     else if (group.getSelectedToggle() == avgtemp) {
-                        out = new Label("Toronto's average temp today is: " + Double.toString(tor.getTemp()) + " degrees celcius");
+                        out = new Label(name+"'s average temp today is: " + Double.toString(tor.getTemp()) + " degrees celcius");
                         grid.add(out, 2, 5);}
                     else if (group.getSelectedToggle() == humid) {
-                        out = new Label("Toronto's humidity percentage is : " + Double.toString(tor.getTemp()) + "%");
+                        out = new Label(name+"'s humidity percentage is : " + Double.toString(tor.getTemp()) + "%");
                         grid.add(out, 2, 6);}
                     else if (group.getSelectedToggle() == sealev) {
-                        out = new Label("Toronto's Sea Level Pressure is : " + Double.toString(tor.getTemp()) + "hPa");
+                        out = new Label(name+"'s Sea Level Pressure is : " + Double.toString(tor.getTemp()) + "hPa");
                         grid.add(out, 2, 9);}
                     else if (group.getSelectedToggle() == pressure) {
-                            out = new Label("Toronto's Air Pressure is : " + Double.toString(tor.getPressure()) + " hPa");
+                            out = new Label(name+"'s Air Pressure is : " + Double.toString(tor.getPressure()) + " hPa");
                             grid.add(out, 2, 8);}
                     else if (group.getSelectedToggle() == windd) {
-                        out = new Label("Toronto's Wind Degree is : " + Double.toString(tor.getWindDegree()) + " degrees");
+                        out = new Label(name+"'s Wind Degree is : " + Double.toString(tor.getWindDegree()) + " degrees");
                         grid.add(out, 2, 11);}
                     else if (group.getSelectedToggle() == winds) {
-                        out = new Label("Toronto's Wind Speed is : " + Double.toString(tor.getPressure()) + " m/s");
+                        out = new Label(name+"'s Wind Speed is : " + Double.toString(tor.getPressure()) + " m/s");
                         grid.add(out, 2, 10);}
                     else if (group.getSelectedToggle() == sunr) {
-                        out = new Label("Toronto's next sunrise is : " + tor.getSunriseDate());
+                        out = new Label(name+"'s next sunrise is : " + tor.getSunriseDate());
                         grid.add(out, 2, 12);}
                     else if (group.getSelectedToggle() == suns) {
-                        out = new Label("Toronto's next sunset is : " + tor.getSunsetDate());
+                        out = new Label(name+"'s next sunset is : " + tor.getSunsetDate());
                         grid.add(out, 2, 13);}
                     else
                         out = new Label("Please make a selection!");
@@ -147,7 +151,7 @@ public class CityInfo  extends MainMenuDirect{
 
             }
         });
-        Scene scene = new Scene(grid, 500, 500);
+        Scene scene = new Scene(grid, 700, 700);
         primaryStage.setScene(scene);
         primaryStage.show();
     }

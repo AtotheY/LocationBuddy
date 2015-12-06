@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
@@ -23,6 +24,7 @@ import static javafx.application.Application.launch;
  */
 public class Main extends Application {
     private Stage primaryStage = null;
+    private static String city;
     public static void main (String args[]) throws Exception
     {
         launch(args);
@@ -41,13 +43,18 @@ public class Main extends Application {
         DropShadow shadow = new DropShadow();
         Button random =  new Button ("Compare two random cities");
         grid.add(random,6,1);
-        Button comp = new Button ("Get info on a city");
+        Button comp = new Button ("Get info on city");
         grid.add(comp,6,3);
         Button exit = new Button ("Exit");
 
         RandomWeatherComparer rand = new RandomWeatherComparer();
         CityInfo cityInfo = new CityInfo();
-        Scene scene = new Scene(grid, 500, 500);
+        Scene scene = new Scene(grid, 700, 700);
+
+        TextField textField = new TextField();
+        textField.setPromptText("City Name (no spaces)");
+        grid.add(textField,5,3);
+
         random.setOnAction(new EventHandler<ActionEvent>() {
            @Override
            public void handle(ActionEvent event){
@@ -55,9 +62,18 @@ public class Main extends Application {
                redirect(rand);
            }
         });
+
         comp.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                textField.getText();
+
+                if (textField.getText() != null)
+                {
+                    city = textField.getText();
+                    setCity(city);
+                    System.out.println ("Sending city: "+ city);
+                }
                 comp.setEffect(shadow);
                 redirect(cityInfo);
             }}
@@ -87,6 +103,15 @@ public class Main extends Application {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void setCity(String c)
+    {
+        city = c;
+    }
+    public String getCity()
+    {
+        return city;
     }
 
 

@@ -17,6 +17,7 @@ public class RandomWeatherComparer extends MainMenuDirect{
 
     public void start (Stage primaryStage) throws Exception {
 
+
         Text scenetitle = new Text("Random Weather Comparer!");
         scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         GridPane grid = new GridPane();
@@ -54,7 +55,7 @@ public class RandomWeatherComparer extends MainMenuDirect{
         grid.add(new Label(" "),5,15);
         grid.add(ret, 5,17);
 
-        Scene scene = new Scene(grid, 500, 500);
+        Scene scene = new Scene(grid, 700, 700);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
