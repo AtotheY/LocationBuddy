@@ -18,6 +18,7 @@ import java.util.Random;
 public class MainObs extends MainMenuDirect {
 
     private static double iteration = 0.0;
+
     public void start (Stage primaryStage) throws Exception {
         Text scenetitle = new Text("Welcome");
         scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
