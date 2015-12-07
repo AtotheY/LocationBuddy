@@ -14,12 +14,16 @@ import java.util.Objects;
  * @since 2015-11-27
  */
 public class DataPull {
-    /**OVERVIEW: A class that pulls live weather data from
-     *http://openweathermap.org/api
-     *Has getter methods for all pieces of information obtained through json file
-     *and http requests. Returns 12 different types of data, unique to city
-     *AF(c)
-     */
+     /**OVERVIEW: A class that pulls live weather data from
+    *http://openweathermap.org/api
+    *Has getter methods for all pieces of information obtained through json file
+    *and http requests. Returns 12 different types of LIVE data, unique to a city
+    *REP INVARIANT: !(exists == false)  - for the data to return all the values, the
+    * json object must exist (i.e 404 not found error has to be avoided).
+    *ABSTRACTION FUNCTION: AF(c) = a city, which has different
+    *attributes related to weather. Example: wind speed = c.wind, Temperature = c.temp,    
+    *Sunrise Time = c.sunsetDate
+    */
 
     //Instance Variables
     private String city = "";
