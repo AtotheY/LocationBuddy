@@ -3,9 +3,8 @@
 
 
 //OVERVIEW: This abstract class will set and get the weather, windspeed and name of each city.
-//REP INVARIANT: The values returned are only of type String for the city name and double for windspeed and temperature.
-//ABSTRACTION FUNCTION: Represents the current temperature, wind speed and city name.
-*/
+//REP INVARIANT: The values returned are only of type String for the city name and double for windspeed and temperature. !(name == null) && !(windspeed == null) && !(temp = =null)
+//ABSTRACTION FUNCTION: AF(c) = c, a city, such that the city temp = c.temp, windspeed  = c.wind, and city name = c.name*/
  public abstract class CityGenerator {
 
     //instance variables.
